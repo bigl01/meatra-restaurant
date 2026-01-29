@@ -6,11 +6,11 @@ import { RESTAURANT_INFO } from './lib/config';
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-meatra-dark text-white">
+    <main className="min-h-screen bg-meatra-dark text-white overflow-x-hidden w-full">
       <Header />
       
       {/* Add padding for fixed header */}
-      <div className="pt-[70px] md:pt-[120px]">
+      <div className="pt-[70px] md:pt-[120px] w-full overflow-x-hidden">
         
         {/* Hero Section */}
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -33,14 +33,14 @@ export default function HomePage() {
             <p className="text-[clamp(18px,3vw,32px)] mb-8 max-w-3xl mx-auto text-gray-200 animate-slideInLeft">
               {RESTAURANT_INFO.tagline}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slideInRight">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slideInRight px-4">
               <Link href="/menu">
-                <button className="btn-primary">
+                <button className="btn-primary w-full sm:w-auto min-w-[200px]">
                   Смотреть меню
                 </button>
               </Link>
               <Link href="/booking">
-                <button className="btn-secondary">
+                <button className="btn-secondary w-full sm:w-auto min-w-[200px]">
                   Забронировать стол
                 </button>
               </Link>
@@ -73,7 +73,7 @@ export default function HomePage() {
                 высочайший уровень обслуживания каждому гостю.
               </p>
               <Link href="/team">
-                <button className="btn-outline">
+                <button className="btn-outline w-full sm:w-auto">
                   Познакомиться с командой
                 </button>
               </Link>
@@ -147,7 +147,7 @@ export default function HomePage() {
               Следите за нашими специальными мероприятиями и акциями
             </p>
             <Link href="/events">
-              <button className="btn-primary">
+              <button className="btn-primary w-full sm:w-auto min-w-[200px]">
                 Все события
               </button>
             </Link>
@@ -163,14 +163,14 @@ export default function HomePage() {
             <p className="text-[clamp(16px,2vw,20px)] text-gray-300 mb-8 max-w-2xl mx-auto">
               Гарантируем незабываемый вечер в атмосфере комфорта и изысканности
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <Link href="/booking">
-                <button className="btn-secondary">
+                <button className="btn-secondary w-full sm:w-auto min-w-[200px]">
                   Забронировать
                 </button>
               </Link>
               <Link href="/contacts">
-                <button className="btn-outline">
+                <button className="btn-outline w-full sm:w-auto min-w-[200px]">
                   Контакты
                 </button>
               </Link>

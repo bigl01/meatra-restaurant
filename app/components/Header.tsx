@@ -54,25 +54,25 @@ export default function Header({ variant = 'default' }: HeaderProps) {
                 {/* Desktop Buttons */}
                 <button 
                   onClick={() => window.open(RESTAURANT_INFO.social.yandexEda, '_blank')}
-                  className="hidden md:block bg-meatra-gray rounded-[10px] w-[clamp(120px,20vw,276px)] h-[clamp(36px,5vw,48px)] hover:bg-meatra-border-gray transition-all duration-300 ease-out text-[clamp(12px,1.5vw,20px)] font-geist-sans whitespace-nowrap"
+                  className="hidden lg:block bg-meatra-gray rounded-[10px] px-4 lg:px-6 py-2 lg:py-3 h-[40px] lg:h-[48px] hover:bg-meatra-border-gray transition-all duration-300 ease-out text-[14px] lg:text-[16px] font-geist-sans whitespace-nowrap"
                 >
                   Заказать доставку
                 </button>
-                <Link href="/booking" className="hidden md:block">
-                  <button className="bg-meatra-red rounded-[10px] w-[clamp(130px,22vw,293px)] h-[clamp(36px,5vw,48px)] hover:bg-[#D33] transition-all duration-300 ease-out text-[clamp(12px,1.5vw,20px)] font-geist-sans whitespace-nowrap">
+                <Link href="/booking" className="hidden lg:block">
+                  <button className="bg-meatra-red rounded-[10px] px-4 lg:px-6 py-2 lg:py-3 h-[40px] lg:h-[48px] hover:bg-[#D33] transition-all duration-300 ease-out text-[14px] lg:text-[16px] font-geist-sans whitespace-nowrap">
                     Забронировать стол
                   </button>
                 </Link>
 
                 {/* Mobile Buttons */}
-                <Link href="/booking" className="md:hidden">
-                  <button className="bg-meatra-gold text-meatra-dark text-[14px] font-medium px-4 py-2 rounded-[6px] hover:bg-[#E8B83A] transition-all duration-300">
+                <Link href="/booking" className="lg:hidden">
+                  <button className="bg-meatra-gold text-meatra-dark text-[12px] sm:text-[14px] font-medium px-3 sm:px-4 py-2 rounded-[6px] hover:bg-[#E8B83A] transition-all duration-300 whitespace-nowrap">
                     Бронь
                   </button>
                 </Link>
                 <button
                   onClick={() => window.open(RESTAURANT_INFO.social.yandexEda, '_blank')}
-                  className="md:hidden bg-meatra-red text-white text-[14px] font-medium px-4 py-2 rounded-[6px] hover:bg-[#D33] transition-all duration-300"
+                  className="lg:hidden bg-meatra-red text-white text-[12px] sm:text-[14px] font-medium px-3 sm:px-4 py-2 rounded-[6px] hover:bg-[#D33] transition-all duration-300 whitespace-nowrap"
                 >
                   Доставка
                 </button>
