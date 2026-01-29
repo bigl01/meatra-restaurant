@@ -1,0 +1,31 @@
+# Автоматическое обновление зависимостей
+
+version: 2
+updates:
+  # Обновления npm пакетов
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "bigl01"
+    commit-message:
+      prefix: "⬆️"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "автообновление"
+    
+  # Обновления GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "🔧"
+    labels:
+      - "github-actions"
+      - "автообновление"
