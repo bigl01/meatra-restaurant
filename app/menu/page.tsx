@@ -26,7 +26,7 @@ export default async function MenuPage() {
     <main className="min-h-screen bg-meatra-dark text-white">
       <Header />
       
-      <div className="pt-[70px] md:pt-[120px]">
+      <div className="pt-[60px] sm:pt-[70px] lg:pt-[90px]">
         {/* Hero Banner */}
         <section className="relative mx-4 my-6 rounded-[20px] overflow-hidden h-[318px]">
           <Image 

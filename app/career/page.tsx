@@ -18,7 +18,7 @@ export default async function CareerPage() {
     <main className="min-h-screen bg-meatra-dark text-white">
       <Header />
       
-      <div className="pt-[70px] md:pt-[120px]">
+      <div className="pt-[60px] sm:pt-[70px] lg:pt-[90px]">
         <CareerClient vacancies={vacancies} />
       </div>
 

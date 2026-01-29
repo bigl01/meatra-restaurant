@@ -18,7 +18,7 @@ export default async function TeamPage() {
     <main className="min-h-screen bg-meatra-dark text-white">
       <Header />
       
-      <div className="pt-[70px] md:pt-[120px]">
+      <div className="pt-[60px] sm:pt-[70px] lg:pt-[90px]">
         <section className="py-12 md:py-16 container-padding max-container">
           <h1 className="section-title">КОМАНДА MEATRA</h1>
           <p className="text-center text-[clamp(16px,2vw,20px)] text-gray-300 mb-12">
