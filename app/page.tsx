@@ -10,7 +10,7 @@ export default function HomePage() {
       <Header />
       
       {/* Add padding for fixed header */}
-      <div className="pt-[70px] md:pt-[120px] w-full overflow-x-hidden">
+      <div className="pt-[60px] sm:pt-[70px] lg:pt-[90px] w-full overflow-x-hidden">
         
         {/* Hero Section */}
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -27,20 +27,20 @@ export default function HomePage() {
           </div>
           
           <div className="relative z-10 container-padding max-container text-center">
-            <h1 className="text-[clamp(36px,8vw,96px)] font-bold uppercase mb-6 animate-fadeIn">
+            <h1 className="text-[clamp(32px,6vw,80px)] font-bold uppercase mb-4 sm:mb-6 animate-fadeIn px-2">
               {RESTAURANT_INFO.name}
             </h1>
-            <p className="text-[clamp(18px,3vw,32px)] mb-8 max-w-3xl mx-auto text-gray-200 animate-slideInLeft">
+            <p className="text-[clamp(16px,2.5vw,28px)] mb-6 sm:mb-8 max-w-3xl mx-auto text-gray-200 animate-slideInLeft px-4">
               {RESTAURANT_INFO.tagline}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slideInRight px-4">
-              <Link href="/menu">
-                <button className="btn-primary w-full sm:w-auto min-w-[200px]">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center animate-slideInRight px-4 max-w-lg mx-auto">
+              <Link href="/menu" className="flex-1 sm:flex-initial">
+                <button className="btn-primary w-full sm:w-auto sm:min-w-[180px]">
                   Смотреть меню
                 </button>
               </Link>
-              <Link href="/booking">
-                <button className="btn-secondary w-full sm:w-auto min-w-[200px]">
+              <Link href="/booking" className="flex-1 sm:flex-initial">
+                <button className="btn-secondary w-full sm:w-auto sm:min-w-[180px]">
                   Забронировать стол
                 </button>
               </Link>
@@ -59,16 +59,16 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-            <div>
-              <h2 className="text-[clamp(32px,5vw,56px)] font-bold mb-6 text-meatra-gold">
+            <div className="px-2">
+              <h2 className="text-[clamp(28px,4vw,48px)] font-bold mb-4 sm:mb-6 text-meatra-gold">
                 О нас
               </h2>
-              <p className="text-[clamp(16px,2vw,20px)] leading-relaxed text-gray-300 mb-4">
+              <p className="text-[clamp(14px,1.8vw,18px)] leading-relaxed text-gray-300 mb-3 sm:mb-4">
                 {RESTAURANT_INFO.name} - это место, где встречаются традиции и современность. 
                 Мы специализируемся на приготовлении изысканных мясных блюд, используя только 
                 лучшие ингредиенты и проверенные временем рецепты.
               </p>
-              <p className="text-[clamp(16px,2vw,20px)] leading-relaxed text-gray-300 mb-6">
+              <p className="text-[clamp(14px,1.8vw,18px)] leading-relaxed text-gray-300 mb-4 sm:mb-6">
                 Наша команда профессионалов создает незабываемую атмосферу и гарантирует 
                 высочайший уровень обслуживания каждому гостю.
               </p>
@@ -142,12 +142,12 @@ export default function HomePage() {
         <section className="py-16 md:py-24 container-padding max-container">
           <h2 className="section-title">События</h2>
           
-          <div className="text-center mb-8">
-            <p className="text-[clamp(16px,2vw,20px)] text-gray-300 mb-6">
+          <div className="text-center mb-8 px-4">
+            <p className="text-[clamp(14px,1.8vw,18px)] text-gray-300 mb-4 sm:mb-6 max-w-xl mx-auto">
               Следите за нашими специальными мероприятиями и акциями
             </p>
             <Link href="/events">
-              <button className="btn-primary w-full sm:w-auto min-w-[200px]">
+              <button className="btn-primary w-full sm:w-auto sm:min-w-[180px] max-w-xs mx-auto">
                 Все события
               </button>
             </Link>
@@ -155,22 +155,22 @@ export default function HomePage() {
         </section>
 
         {/* Contact CTA */}
-        <section className="py-16 md:py-24 bg-meatra-gray">
+        <section className="py-12 sm:py-16 md:py-24 bg-meatra-gray">
           <div className="container-padding max-container text-center">
-            <h2 className="text-[clamp(32px,5vw,56px)] font-bold mb-6">
+            <h2 className="text-[clamp(28px,4vw,48px)] font-bold mb-4 sm:mb-6 px-2">
               Забронируйте столик
             </h2>
-            <p className="text-[clamp(16px,2vw,20px)] text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-[clamp(14px,1.8vw,18px)] text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
               Гарантируем незабываемый вечер в атмосфере комфорта и изысканности
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
-              <Link href="/booking">
-                <button className="btn-secondary w-full sm:w-auto min-w-[200px]">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-4 max-w-lg mx-auto">
+              <Link href="/booking" className="flex-1 sm:flex-initial">
+                <button className="btn-secondary w-full sm:w-auto sm:min-w-[180px]">
                   Забронировать
                 </button>
               </Link>
-              <Link href="/contacts">
-                <button className="btn-outline w-full sm:w-auto min-w-[200px]">
+              <Link href="/contacts" className="flex-1 sm:flex-initial">
+                <button className="btn-outline w-full sm:w-auto sm:min-w-[180px]">
                   Контакты
                 </button>
               </Link>

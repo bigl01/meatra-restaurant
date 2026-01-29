@@ -112,15 +112,15 @@ body {
 /* Button hover effects */
 @layer utilities {
   .btn-primary {
-    @apply bg-meatra-gold text-meatra-dark px-6 py-3 rounded-[10px] font-medium transition-all duration-300 hover:bg-[#E8B83A] hover:scale-105 active:scale-95;
+    @apply bg-meatra-gold text-meatra-dark px-4 sm:px-6 py-2.5 sm:py-3 rounded-[8px] sm:rounded-[10px] font-medium text-sm sm:text-base transition-all duration-300 hover:bg-[#E8B83A] hover:scale-105 active:scale-95;
   }
   
   .btn-secondary {
-    @apply bg-meatra-red text-white px-6 py-3 rounded-[10px] font-medium transition-all duration-300 hover:bg-[#D33] hover:scale-105 active:scale-95;
+    @apply bg-meatra-red text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-[8px] sm:rounded-[10px] font-medium text-sm sm:text-base transition-all duration-300 hover:bg-[#D33] hover:scale-105 active:scale-95;
   }
   
   .btn-outline {
-    @apply border-2 border-white text-white px-6 py-3 rounded-[10px] font-medium transition-all duration-300 hover:bg-white hover:text-meatra-dark;
+    @apply border-2 border-white text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-[8px] sm:rounded-[10px] font-medium text-sm sm:text-base transition-all duration-300 hover:bg-white hover:text-meatra-dark;
   }
 
   .card {
@@ -132,15 +132,15 @@ body {
   }
 
   .section-title {
-    @apply text-meatra-gold text-[clamp(28px,5vw,48px)] font-bold text-center uppercase mb-8;
+    @apply text-meatra-gold text-[clamp(24px,4vw,42px)] font-bold text-center uppercase mb-6 sm:mb-8 px-4;
   }
 
   .container-padding {
-    @apply px-4 md:px-6 lg:px-8;
+    @apply px-3 sm:px-4 md:px-6 lg:px-8;
   }
 
   .max-container {
-    @apply max-w-[1720px] mx-auto;
+    @apply max-w-[1720px] mx-auto w-full;
   }
 }
 
