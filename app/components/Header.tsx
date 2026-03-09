@@ -23,7 +23,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
           <Link href="/" className="flex items-center justify-center flex-shrink-0 min-w-0">
             <div className="relative w-[80px] sm:w-[100px] lg:w-[160px] h-[20px] sm:h-[24px] lg:h-[38px]">
               <Image 
-                src="/logo.svg" 
+                src="/logo.png" 
                 alt={RESTAURANT_INFO.name}
                 fill
                 className="object-contain" 
