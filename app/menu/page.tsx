@@ -30,7 +30,7 @@ export default async function MenuPage() {
         {/* Hero Banner */}
         <section className="relative mx-4 my-6 rounded-[20px] overflow-hidden h-[318px]">
           <Image 
-            src="/fon_menu.svg" 
+            src="/main_page_menu.jpg" 
             alt="Меню Meatra" 
             fill 
             className="object-cover object-center" 
@@ -55,13 +55,13 @@ export default async function MenuPage() {
         {/* Main Menu Card */}
         <section className="mx-4 my-6 relative rounded-[20px] overflow-hidden h-[318px]">
           <Image 
-            src="/main_menu.png" 
+            src="/main_menu_foto.jpg" 
             alt="Основное меню" 
             fill 
             className="object-cover" 
           />
           <div className="absolute inset-0 flex flex-col justify-between items-start p-5 bg-gradient-to-t from-black/60 to-transparent">
-            <p className="text-white text-[clamp(16px,2vw,20px)]">
+            <p className="text-white text-[clamp(16px,2vw,20px)] line-clamp-2 max-w-full break-words">
               Классические блюда, каждый найдет то, что ему по душе
             </p>
             <Link href="/menu/main">
@@ -91,7 +91,7 @@ export default async function MenuPage() {
             className="object-cover" 
           />
           <div className="absolute inset-0 flex flex-col justify-between items-start p-5 bg-gradient-to-t from-black/60 to-transparent">
-            <p className="text-white text-[clamp(16px,2vw,20px)]">
+            <p className="text-white text-[clamp(16px,2vw,20px)] line-clamp-2 max-w-full break-words">
               Почувствуйте вкус дикой природы. Для настоящих гурманов
             </p>
             <Link href="/menu/game">
@@ -115,13 +115,13 @@ export default async function MenuPage() {
         {/* Wine Card */}
         <section className="mx-4 my-6 relative rounded-[20px] overflow-hidden h-[318px]">
           <Image 
-            src="/fon_menu.svg" 
+            src="/main_page_menu.jpg" 
             alt="Винная карта" 
             fill 
             className="object-cover" 
           />
           <div className="absolute inset-0 flex flex-col justify-between items-start p-5 bg-gradient-to-t from-black/60 to-transparent">
-            <p className="text-white text-[clamp(16px,2vw,20px)]">
+            <p className="text-white text-[clamp(16px,2vw,20px)] line-clamp-2 max-w-full break-words">
               Большое разнообразие изысканных напитков
             </p>
             <Link href="/menu/bar">
