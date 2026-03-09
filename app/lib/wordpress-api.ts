@@ -83,7 +83,7 @@ function transformProduct(wpProduct: any): Product | null {
     return {
       id: wpProduct.id,
       name: wpProduct.title?.rendered?.trim() || 'Без названия',
-      image: wpProduct.acf?.product_image || wpProduct.acf?.image || '/placeholder.jpg',
+      image: wpProduct.acf?.product_image || wpProduct.acf?.image || '/placeholder.svg',
       description: wpProduct.acf?.short_description || wpProduct.acf?.description || '',
       price: wpProduct.acf?.price?.toString() || '',
       weight: wpProduct.acf?.weight?.toString() || '',
@@ -118,7 +118,7 @@ function transformEvent(wpPost: any): Event | null {
       title: wpPost.title?.rendered?.trim() || 'Событие',
       date: wpPost.acf?.event_date || wpPost.date || new Date().toISOString(),
       description: wpPost.acf?.description || wpPost.content?.rendered || '',
-      image: wpPost.acf?.main_image || wpPost.acf?.image || '/placeholder.jpg',
+      image: wpPost.acf?.main_image || wpPost.acf?.image || '/placeholder.svg',
       galleryImages: galleryImages.length > 0 ? galleryImages : [],
     };
   } catch (error) {
@@ -142,7 +142,7 @@ function transformTeamMember(wpPost: any): TeamMember | null {
       position: wpPost.acf?.position?.toString() || 'Должность не указана',
       description: wpPost.acf?.description || wpPost.acf?.short_description || '',
       shortDescription: wpPost.acf?.short_description || '',
-      image: wpPost.acf?.photo || wpPost.acf?.image || '/placeholder.jpg',
+      image: wpPost.acf?.photo || wpPost.acf?.image || '/placeholder.svg',
     };
   } catch (error) {
     console.error('Error transforming team member:', error, wpPost);

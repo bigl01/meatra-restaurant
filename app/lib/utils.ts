@@ -61,8 +61,13 @@ export function classNames(...classes: (string | boolean | undefined)[]): string
   return classes.filter(Boolean).join(' ');
 }
 
-export function getImageUrl(url: string | undefined, fallback: string = '/placeholder.jpg'): string {
+export function getImageUrl(url: string | undefined, fallback: string = '/placeholder.svg'): string {
   if (!url || url === 'false') return fallback;
+  // Relative WordPress paths need base URL
+  if (url.startsWith('/') && !url.startsWith('//')) {
+    const base = process.env.NEXT_PUBLIC_WORDPRESS_API_URL?.replace('/wp-json/wp/v2', '') || '';
+    return base ? `${base}${url}` : url;
+  }
   return url;
 }
 

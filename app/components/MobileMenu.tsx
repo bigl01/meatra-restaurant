@@ -16,7 +16,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <div
       className={`fixed inset-0 bg-meatra-dark bg-opacity-95 z-40 transform ${
         isOpen ? 'translate-x-0' : 'translate-x-full'
-      } transition-transform duration-300 ease-in-out md:hidden`}
+      } transition-transform duration-300 ease-in-out lg:hidden`}
     >
       {/* Close Button */}
       <div className="flex justify-end p-4">

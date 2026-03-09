@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { getEvents } from '../lib/wordpress-api';
-import { formatDate } from '../lib/utils';
-import Image from 'next/image';
+import { formatDate, stripHtml } from '../lib/utils';
+import ImageWithFallback from '../components/ImageWithFallback';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default async function EventsPage() {
                   <div className="card cursor-pointer h-full">
                     {/* Event Image */}
                     <div className="relative h-[250px] rounded-[15px] overflow-hidden mb-4">
-                      <Image
+                      <ImageWithFallback
                         src={event.image}
                         alt={event.title}
                         fill
@@ -59,7 +59,8 @@ export default async function EventsPage() {
                         {event.title}
                       </h3>
                       <p className="text-gray-400 text-[14px] sm:text-[16px] line-clamp-3">
-                        {event.description.replace(/<[^>]*>/g, '').substring(0, 150)}...
+                        {stripHtml(event.description).slice(0, 150) || 'Описание события'}
+                        {stripHtml(event.description).length > 150 ? '...' : ''}
                       </p>
                     </div>
                   </div>

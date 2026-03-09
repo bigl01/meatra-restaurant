@@ -30,7 +30,7 @@ export default async function MenuPage() {
         {/* Hero Banner */}
         <section className="relative mx-4 my-6 rounded-[20px] overflow-hidden h-[318px]">
           <Image 
-            src="/main_page_menu.jpg" 
+            src="/fon_menu.svg" 
             alt="Меню Meatra" 
             fill 
             className="object-cover object-center" 
@@ -115,7 +115,7 @@ export default async function MenuPage() {
         {/* Wine Card */}
         <section className="mx-4 my-6 relative rounded-[20px] overflow-hidden h-[318px]">
           <Image 
-            src="/vine_card.svg" 
+            src="/fon_menu.svg" 
             alt="Винная карта" 
             fill 
             className="object-cover" 

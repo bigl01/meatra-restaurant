@@ -176,19 +176,30 @@ export default function CareerClient({ vacancies }: CareerClientProps) {
                 <label className="block text-meatra-gold text-sm font-bold mb-2">
                   Должность
                 </label>
-                <select
-                  value={formData.position}
-                  onChange={(e) => setFormData({...formData, position: e.target.value})}
-                  className="input-field"
-                  required
-                >
-                  <option value="">Выберите должность</option>
-                  {vacancies.map(v => (
-                    <option key={v.id} value={stripHtml(v.title)}>
-                      {stripHtml(v.title)}
-                    </option>
-                  ))}
-                </select>
+                {vacancies.length > 0 ? (
+                  <select
+                    value={formData.position}
+                    onChange={(e) => setFormData({...formData, position: e.target.value})}
+                    className="input-field"
+                    required
+                  >
+                    <option value="">Выберите должность</option>
+                    {vacancies.map(v => (
+                      <option key={v.id} value={stripHtml(v.title)}>
+                        {stripHtml(v.title)}
+                      </option>
+                    ))}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.position}
+                    onChange={(e) => setFormData({...formData, position: e.target.value})}
+                    className="input-field"
+                    placeholder="Укажите желаемую должность"
+                    required
+                  />
+                )}
               </div>
 
               <button

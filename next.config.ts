@@ -21,6 +21,26 @@ const nextConfig: NextConfig = {
         hostname: 'admin.qazan-rest.ru',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'wp.meatra.by',
+        pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'wp.meatra.by',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'testdomen.store',
+        pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'testdomen.store',
+        pathname: '/**',
+      },
     ],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

@@ -10,7 +10,7 @@ interface SafeImageProps extends Omit<ImageProps, 'onError'> {
 export default function SafeImage({
   src,
   alt,
-  fallbackSrc = '/placeholder.jpg',
+  fallbackSrc = '/placeholder.svg',
   ...props
 }: SafeImageProps) {
   const [imgSrc, setImgSrc] = useState(src);

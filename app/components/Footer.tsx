@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4 md:gap-[20px] w-full md:max-w-[703px]">
           <div className="relative w-[clamp(120px,15vw,200px)] h-[clamp(24px,7.5vw,48px)] flex-shrink-0">
             <Image 
-              src="/logo.png" 
+              src="/logo.svg" 
               alt={RESTAURANT_INFO.name}
               fill 
               className="object-contain" 

@@ -47,8 +47,17 @@ export default function BookingPage() {
     setSubmitStatus('idle');
 
     try {
-      // TODO: Implement actual API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const response = await fetch('/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Ошибка отправки');
+      }
       
       setSubmitStatus('success');
       setFormData({
@@ -195,7 +204,7 @@ export default function BookingPage() {
                   name="comment"
                   value={formData.comment}
                   onChange={handleChange}
-                  className="input-field min-h-[100px] resize-vertical"
+                  className="input-field min-h-[100px] resize-y"
                   placeholder="Особые пожелания или комментарии..."
                 />
               </div>

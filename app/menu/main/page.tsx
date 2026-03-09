@@ -30,9 +30,9 @@ export default async function MainMenuPage() {
       
       <div className="pt-[60px] sm:pt-[70px] lg:pt-[90px] w-full">
         {/* Hero Banner */}
-        <section className="relative mx-4 my-6 rounded-[20px] overflow-hidden h-[318px] max-w-[1720px] mx-auto">
+        <section className="relative mx-4 my-6 rounded-[20px] overflow-hidden h-[318px] max-w-[1720px] mx-auto container-padding">
           <Image 
-            src="/main_menu_foto.jpg" 
+            src="/fon_menu.svg" 
             alt="Основное меню" 
             fill 
             className="object-cover" 

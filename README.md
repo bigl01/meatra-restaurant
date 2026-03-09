@@ -126,6 +126,13 @@ http://localhost:3000
 
 ## 🚀 Деплой
 
+### Рекомендуемая схема: Vercel + Hoster.by
+
+- **Next.js** → Vercel (бесплатно)
+- **WordPress** → Hoster.by (контент)
+
+**Подробная инструкция:** [DEPLOYMENT-HOSTER.md](./DEPLOYMENT-HOSTER.md)
+
 ### Production Build
 ```bash
 npm run build

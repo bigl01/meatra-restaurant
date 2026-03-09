@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://meatra.by',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://meatra.by',
     siteName: RESTAURANT_INFO.name,
     title: RESTAURANT_INFO.name,
     description: RESTAURANT_INFO.tagline,

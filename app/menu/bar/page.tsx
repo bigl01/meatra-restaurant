@@ -22,7 +22,7 @@ export default async function BarMenuPage() {
         {/* Hero Banner */}
         <section className="relative mx-4 my-6 rounded-[20px] overflow-hidden h-[318px] max-w-[1720px] mx-auto">
           <Image 
-            src="/vine_card.svg" 
+            src="/fon_menu.svg" 
             alt="Винная карта" 
             fill 
             className="object-cover" 

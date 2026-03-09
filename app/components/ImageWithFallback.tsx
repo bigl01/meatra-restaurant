@@ -14,7 +14,7 @@ interface ImageWithFallbackProps extends Omit<ImageProps, 'onError' | 'src'> {
  */
 export default function ImageWithFallback({
   src,
-  fallback = '/placeholder.jpg',
+  fallback = '/placeholder.svg',
   alt,
   ...props
 }: ImageWithFallbackProps) {

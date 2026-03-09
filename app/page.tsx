@@ -16,7 +16,7 @@ export default function HomePage() {
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/hero.jpg"
+              src="/foto_center.svg"
               alt="Meatra Restaurant"
               fill
               className="object-cover"
@@ -53,7 +53,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="relative h-[400px] md:h-[500px] rounded-[20px] overflow-hidden">
               <Image
-                src="/gruppa-molodyh-ludei-tostov-bokaly 1.png"
+                src="/team-photo.jpg"
                 alt="О ресторане"
                 fill
                 className="object-cover"
@@ -92,7 +92,7 @@ export default function HomePage() {
                 <div className="card group cursor-pointer h-[400px]">
                   <div className="relative h-[250px] rounded-[15px] overflow-hidden mb-4">
                     <Image
-                      src="/main_menu.png"
+                      src="/menu_main.svg"
                       alt="Основное меню"
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -108,7 +108,7 @@ export default function HomePage() {
                 <div className="card group cursor-pointer h-[400px]">
                   <div className="relative h-[250px] rounded-[15px] overflow-hidden mb-4">
                     <Image
-                      src="/hunter_menu.png"
+                      src="/menu_hunter.svg"
                       alt="Меню из дичи"
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -124,7 +124,7 @@ export default function HomePage() {
                 <div className="card group cursor-pointer h-[400px]">
                   <div className="relative h-[250px] rounded-[15px] overflow-hidden mb-4">
                     <Image
-                      src="/vine.png"
+                      src="/fon_menu.svg"
                       alt="Винная карта"
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
